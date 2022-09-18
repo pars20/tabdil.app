@@ -8,7 +8,7 @@ With the tabdilapp plugin you can have a professional stopwatch on your website.
 
 ## Technologies
 
-Compatible with WordPress version 5.2 and above and PHP version 7.0 and above.
+Compatible with *WordPress* version **5.2** and above and *PHP* version **7.0** and above.
 
 PHP, JavaScript, Jquery are used in this project.
 
