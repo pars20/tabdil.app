@@ -52,4 +52,4 @@ To see a *live demo* of this plugin, you can visit the following address:
 
 To see a **live example of similar plugins** related to **Time**, refer to the following address:
 
-[All Time Plugins from tabdil.app](https://tabdil.app/time/)
+[All Time Plugins from Tabdil.app](https://tabdil.app/time/)
