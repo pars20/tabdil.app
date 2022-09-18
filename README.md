@@ -24,11 +24,6 @@ PHP, JavaScript, Jquery are used in this project.
 
 3. Activate the plugin from the WordPress admin panel.
 
-4. From the following path, you can define Farsi or English language for the plugin:
-
-`wp-content / plugins / jafar-stopwatch-plugin / time / inc / head.php`
-
-
 4. Put the following code in any part of your website you want (pages/posts):
 
 `[Tabdil.App Stopwatch]`
@@ -39,6 +34,12 @@ PHP, JavaScript, Jquery are used in this project.
 ## Customization
 
 To customize the front end of the project, you can edit the CSS file from the following path:
+
+`wp-content / plugins / jafar-stopwatch-plugin / css / main.css`
+
+You can change the language of plugin. From the following path, you can define Farsi or English language for the plugin:
+
+`wp-content / plugins / jafar-stopwatch-plugin / time / inc / head.php`
 
 
 
