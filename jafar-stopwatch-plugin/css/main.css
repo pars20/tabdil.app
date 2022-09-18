@@ -1,0 +1,519 @@
+.box1 {
+  font-size: 1em;
+  color: #222;
+  display: block;
+  max-width: 100%;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.4em;
+  margin: 1em auto;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.box1.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.box1.loading::after {
+  content: "loading ...";
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: rgba(34, 34, 34, 0.7);
+  line-height: 7em;
+  font-size: 2.05em;
+}
+
+.box1 i, .box1 #line > div#clock, .box1.month #info .c #when {
+  direction: ltr;
+}
+
+.box1.striped #line > div:nth-child(odd), .box1 .striped #line > div:nth-child(odd) {
+  text-align: left;
+}
+
+.box1.striped #line > div:nth-child(even), .box1 .striped #line > div:nth-child(even), .box1.mosaic #line div, .box1 #line #field label, .box1.month #info {
+  text-align: right;
+}
+
+.box1.striped #line > div#desc, .box1 .striped #line > div#desc, .box1 #line, .box1.month #numbers #row #d, .box1.month #head, .box1 #title {
+  text-align: center;
+}
+
+.box1 #title {
+  font-weight: bold;
+}
+
+.box1 i {
+  font-style: normal;
+}
+
+.box1 input[type=text], .box1 #line.btns a[type=text]#today, .box1 select, .box1.striped #line > div#desc, .box1 .striped #line > div#desc, .box1 #line.btns a#today.block, .box1 #line > div, .box1 #line, .box1.month #numbers #row, .box1.month #weekdays, .box1.month #head {
+  width: 100%;
+}
+
+.box1 #line.btns input, .box1 #line.btns a#today {
+  display: none;
+}
+
+.box1 #line.alarm #desc label, .box1 #line #field label {
+  display: block;
+}
+
+.box1.striped #line, .box1 .striped #line, .box1.mosaic #line, .box1 #line.btns, .box1 #line.resp, .box1 #line #field #radios, .box1.month #numbers #row #d > div, .box1.month #numbers #row, .box1.month #weekdays, .box1.month #head {
+  display: flex;
+}
+
+.box1 input[type=submit], .box1 #line.btns input, .box1 #line.btns a#today {
+  color: #164199;
+  background-color: rgba(160, 160, 160, 0.4392156863);
+  border-radius: 0.4em;
+  cursor: pointer;
+  border: 0px;
+  padding: 0.6em 1em;
+  margin: 0 auto;
+}
+
+.box1 #title {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.6em 0;
+  font-size: 1.3em;
+  color: #3366cc;
+}
+.box1 #title.res, .box1 #title.bottom {
+  border-top: 1px solid #e0e0e0;
+  font-size: 1.1em;
+}
+.box1 #title.bottom {
+  color: #222;
+  border-bottom: none;
+}
+.box1.month #head {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+.box1.month #head #name {
+  margin: 0 auto;
+}
+.box1.month #head #name > b {
+  color: #3366cc;
+  font-size: 1.5em;
+  line-height: 0.8em;
+}
+.box1.month #head #name > div {
+  font-size: 0.8em;
+  line-height: 1.2rem;
+}
+.box1.month #head #name > div:nth-child(2) {
+  color: #386600;
+  font-size: 0.7em;
+}
+.box1.month #head #name > div:nth-child(3) {
+  color: #666;
+  font-size: 0.8em;
+}
+.box1.month #head #name > div:nth-child(4) {
+  color: #888;
+}
+.box1.month #head a {
+  font-size: 0.84em;
+}
+.box1.month #weekdays {
+  border-radius: 0.4em;
+  justify-content: space-around;
+  background-color: #888;
+  color: #fff;
+  padding: 0.4em 0;
+}
+.box1.month #numbers {
+  display: block;
+  margin: 0.5em 0;
+}
+.box1.month #numbers #row {
+  justify-content: space-around;
+}
+.box1.month #numbers #row #d {
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 0.4em 0.6em;
+  width: 14.28%;
+}
+.box1.month #numbers #row #d > div {
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.4em;
+}
+.box1.month #numbers #row #d #m {
+  font-size: 0.9em;
+}
+.box1.month #numbers #row #d.friday {
+  color: #ff0000;
+}
+.box1.month #numbers #row #d.friday > div {
+  color: #ff0000;
+}
+.box1.month #numbers #row #d.holiday {
+  color: #ff0000;
+}
+.box1.month #numbers #row #d.holiday > div {
+  color: #ff0000;
+}
+.box1.month #numbers #row #d.out {
+  opacity: 0.7;
+  filter: opacity(0.7);
+}
+.box1.month #numbers #row #d.today {
+  border-radius: 0.2em;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 0px 14px -7px rgba(0, 0, 0, 0.5);
+}
+.box1.month #info {
+  color: #444;
+  background-color: #f0f0f0;
+  font-size: 0.85em;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0.4em;
+}
+.box1.month #info > div > b {
+  color: #333;
+  font-size: 1.08em;
+}
+.box1.month #info > div #when {
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  color: rgba(51, 102, 204, 0.6705882353);
+}
+.box1.month #info .c #when {
+  font-family: tahoma;
+  font-weight: normal;
+  display: inline-block;
+}
+.box1.month #info #holiday {
+  color: #ff0000;
+}
+.box1.month #info #holiday #when {
+  color: rgba(255, 0, 0, 0.5);
+}
+.box1.month #info #holiday b {
+  color: #a30000;
+}
+.box1 #line {
+  padding: 0.5em 0;
+  margin: 0.4em 0;
+}
+.box1 #line > div#clock {
+  color: #076d29;
+  font-size: 2em;
+  padding: 0;
+}
+.box1 #line > div#clock span {
+  vertical-align: text-top;
+}
+.box1 #line > div#clock small {
+  color: #888;
+  font-size: 1em;
+  margin: 0 0.5em;
+}
+.box1 #line > div#clock.primary {
+  color: #6b088a;
+}
+.box1 #line > div#clock.paused {
+  color: #777;
+}
+.box1 #line #field:first-child label {
+  margin-top: 0;
+}
+.box1 #line #field label {
+  margin: 1em 0.5em 0.2em 0.5em;
+}
+.box1 #line #field label#radio {
+  border-radius: 0.4em;
+  background-color: #e0e0e0;
+  padding: 0.4em 5%;
+}
+.box1 #line #field label#radio small {
+  display: block;
+  font-size: 0.6em;
+  color: #666;
+}
+.box1 #line #field #radios {
+  justify-content: space-around;
+}
+.box1 #line.resp {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box1 #line.resp #field {
+  padding: 0 2%;
+  width: 25%;
+}
+.box1 #line.resp #field label {
+  margin-top: 1em;
+}
+.box1 #line.resp #field label#underline {
+  border-bottom: 1px solid #e0e0e0;
+}
+.box1 #line.resp #field label.sound {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box1 #line.resp #field label.sound a#play {
+  font-size: 0.8em;
+  color: #777;
+  line-height: 1em;
+  text-align: center;
+  padding: 0 0 0 0.5em;
+}
+.box1 #line.resp #field label.sound a#play:hover {
+  color: #3366cc;
+}
+.box1 #line.resp #field label.sound a#play:hover svg {
+  fill: #3366cc;
+}
+.box1 #line.resp #field label.sound a#play svg {
+  fill: #6a6a6a;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.box1 #line.resp #field label.sound a#play svg#pause {
+  display: none;
+}
+.box1 #line.resp.col2 #field {
+  width: 50%;
+}
+.box1 #line.alarm #desc select {
+  font-size: 2em;
+  width: 60%;
+  min-width: 90px;
+  max-width: 120px;
+}
+.box1 #line.alarm #desc label {
+  color: #777;
+}
+.box1 #line.alarm #desc label span:first-child {
+  margin-left: 2.7em;
+}
+.box1 #line.alarm #desc #dots {
+  color: #777;
+  font-size: 3em;
+  margin: 0 0.1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+.box1 #line.btns {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box1 #line.btns input, .box1 #line.btns a#today {
+  padding: 1em 10%;
+}
+.box1 #line.btns input:hover, .box1 #line.btns a#today:hover {
+  color: #fff;
+  background-color: #3366cc;
+}
+.box1 #line.btns input#reset:not(.hide), .box1 #line.btns input#start {
+  display: block;
+}
+.box1 #line.btns a#today {
+  display: block;
+}
+.box1 #line.timer #desc input[type=text], .box1 #line.btns.timer #desc a[type=text]#today {
+  font-size: 1.5em;
+  width: 30%;
+  min-width: 50px;
+  max-width: 120px;
+}
+.box1 #line.timer #desc label, .box1 #line.timer #desc > div {
+  display: flex;
+  justify-content: space-around;
+  color: #777;
+}
+.box1 #line.timer #desc label input, .box1 #line.btns.timer #desc label a#today, .box1 #line.timer #desc > div input, .box1 #line.btns.timer #desc > div a#today {
+  width: auto;
+}
+@media screen and (max-width: 830px) {
+  .box1 #line.resp #field {
+    width: 50%;
+  }
+  .box1 #line #field label#radio {
+    padding: 0.4em 1%;
+  }
+  .box1 #line.btns input, .box1 #line.btns a#today {
+    padding: 1.05em 6%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .box1 #line.resp #field, .box1 #line.resp.col2 #field {
+    width: 100%;
+    padding: 0 1%;
+  }
+  .box1 #line.btns input, .box1 #line.btns a#today {
+    width: 100%;
+    padding: 1.1em 2%;
+    margin: 0.5em 0;
+  }
+}
+.box1.mosaic #line {
+  padding: 0.3em 0;
+}
+.box1.mosaic #line div {
+  background-color: #f0f0f0;
+  border-radius: 0.4em;
+  padding: 0.2em 0.5em;
+  margin: 0 0.4em;
+}
+.box1.mosaic #line div:nth-child(odd) {
+  border-right: 2px solid rgba(200, 150, 150, 0.7);
+}
+.box1.mosaic #line div:nth-child(even) {
+  border-right: 2px solid rgba(150, 150, 220, 0.7);
+}
+.box1.mosaic #line div b {
+  color: #666;
+  font-size: 0.9em;
+}
+.box1.striped #line.small, .box1 .striped #line.small {
+  font-size: 0.95em;
+}
+.box1.striped #line.btns, .box1 .striped #line.btns {
+  justify-content: space-around;
+  align-items: center;
+}
+.box1.striped #line.btns a, .box1 .striped #line.btns a {
+  padding: 0.4em 5%;
+}
+.box1.striped #line:nth-child(even), .box1.striped #line.colored, .box1 .striped #line:nth-child(even), .box1 .striped #line.colored {
+  background-color: #f0f0f0;
+  border-radius: 0.4em;
+}
+.box1.striped #line > div, .box1 .striped #line > div {
+  width: 50%;
+}
+.box1.striped #line > div:nth-child(odd), .box1 .striped #line > div:nth-child(odd) {
+  padding-left: 10%;
+}
+.box1.striped #line > div:nth-child(even), .box1 .striped #line > div:nth-child(even) {
+  padding-right: 10%;
+  color: #3366cc;
+}
+.box1.striped #line > div#desc, .box1 .striped #line > div#desc {
+  padding: 0;
+}
+.box1.striped #line > div#desc > div, .box1 .striped #line > div#desc > div {
+  display: block;
+}
+.box1.striped #line > div#desc > div.holiday, .box1 .striped #line > div#desc > div.holiday {
+  color: #ff0000;
+}
+.box1.striped.stopwatch #line > div, .box1 .striped.stopwatch #line > div {
+  text-align: right;
+  padding-left: 0;
+}
+.box1.striped.stopwatch #line > div i, .box1 .striped.stopwatch #line > div i {
+  padding: 0;
+  direction: rtl;
+  background-color: transparent;
+  vertical-align: middle;
+}
+.box1.striped.stopwatch #line > div:nth-child(odd), .box1 .striped.stopwatch #line > div:nth-child(odd) {
+  padding-right: 10%;
+  color: #3366cc;
+}
+.box1.striped.stopwatch #line > div:nth-child(odd) i, .box1 .striped.stopwatch #line > div:nth-child(odd) i {
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+}
+.box1.striped.stopwatch #line > div:nth-child(even), .box1 .striped.stopwatch #line > div:nth-child(even) {
+  color: #555;
+}
+.box1.striped.stopwatch #line > div:nth-child(even) i, .box1 .striped.stopwatch #line > div:nth-child(even) i {
+  background-color: rgba(10, 95, 38, 0.768627451);
+  color: #fff;
+  font-size: 1.5rem;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  display: inline-block;
+  text-align: center;
+  margin-left: 0.6em;
+}
+.box1.striped.stopwatch #line.zero, .box1 .striped.stopwatch #line.zero {
+  background-color: cornsilk;
+}
+.box1.striped.stopwatch #line.zero #desc, .box1 .striped.stopwatch #line.zero #desc {
+  color: #999;
+}
+.box1.striped.stopwatch span#zero, .box1 .striped.stopwatch span#zero {
+  color: #999;
+}
+.box1 A, .box1 A:visited {
+  color: #0c2f75;
+  text-decoration: none;
+  cursor: pointer;
+}
+.box1 A:hover {
+  color: #3051e6;
+  text-decoration: none;
+}
+.box1.hide, .box1 .hide {
+  display: none;
+}
+.box1 audio {
+  display: none;
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+.box1 i {
+  font-size: 0.8rem;
+  padding: 0.04em 1em;
+  border-radius: 1em;
+  color: #fff;
+  background-color: #888;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: normal;
+}
+.box1 input[type=submit], .box1 #line.btns a[type=submit]#today {
+  width: 90%;
+}
+.box1 input[type=submit]:hover, .box1 #line.btns a[type=submit]#today:hover {
+  color: #fff;
+  background-color: #3366cc;
+}
+.box1 input[type=radio], .box1 #line.btns a[type=radio]#today {
+  outline: none;
+  vertical-align: middle;
+}
+
+.info {
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+}
+
+.alert {
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+}
+
+.success {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.success {
+  border-color: green;
+}
+
+/*# sourceMappingURL=main.css.map */
