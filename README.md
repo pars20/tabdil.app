@@ -33,13 +33,17 @@ PHP, JavaScript, Jquery are used in this project.
 
 ## Customization
 
-To customize the front end of the project, you can edit the CSS file from the following path:
+1. To customize the **front-end** of the project, you can edit the *CSS* file from the following path:
 
 `wp-content / plugins / jafar-stopwatch-plugin / css / main.css`
 
-You can change the language of plugin. From the following path, you can define Farsi or English language for the plugin:
+2. You can change the **language** of plugin. From the following path, you can define **Farsi** or **English** language for the plugin:
 
 `wp-content / plugins / jafar-stopwatch-plugin / time / inc / head.php`
+
+3. From this language file you will be able to **translate** the project to any language you wanted to:
+
+`wp-content / plugins / jafar-stopwatch-plugin / time / inc / language.php`
 
 
 
