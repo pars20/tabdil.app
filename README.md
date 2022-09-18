@@ -5,11 +5,13 @@ This is a WordPress plugin.
 With the tabdilapp plugin you can have a professional stopwatch on your website.
 
 
+
 ## Technologies
 
 Compatible with WordPress version 5.2 and above and PHP version 7.0 and above.
 
 PHP, JavaScript, Jquery are used in this project.
+
 
 
 ## Setup guide:
@@ -33,9 +35,11 @@ PHP, JavaScript, Jquery are used in this project.
 
 
 
+
 ## Customization
 
 To customize the front end of the project, you can edit the CSS file from the following path:
+
 
 
 
@@ -43,9 +47,9 @@ To customize the front end of the project, you can edit the CSS file from the fo
 
 To see a *live demo* of this plugin, you can visit the following address:
 
-(Stopwatch Plugin)[https://tabdil.app/time/stopwatch/]
+[Stopwatch Plugin](https://tabdil.app/time/stopwatch/)
 
 
 To see a **live example of similar plugins** related to **Time**, refer to the following address:
 
-(All Time Plugins)[https://tabdil.app/time/]
+[All Time Plugins from tabdil.app](https://tabdil.app/time/)
